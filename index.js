@@ -1,18 +1,49 @@
 // Your code here
-function saturdayFun(activity="roller-skate") {
-    return `This Saturday, I want to ${activity}!`
-  }
+
+function saturdayFun(funAct = 'roller-skate'){
+   return (`This Saturday, I want to ${funAct}!`)
+}
+
+function mondayWork(activity = 'go to the office'){
+  return (`This Monday, I will ${activity}.`)
+}
 
 
-let mondayWork = function(activity="go to the office") {
-    return `This Monday, I will ${activity}.`
+function wrapAdjective(visualFlair = '*'){
+  return function(adj = 'special'){
+     return (`You are ${visualFlair}${adj}${visualFlair}!`)
   }
+}
 
-  let wrapAdjective = function(style="*") {
-    return function(adjective="special") {
-      return `You are ${style}${adjective}${style}!`
-    }
-  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// function saturdayFun(activity="roller-skate") {
+//     return `This Saturday, I want to ${activity}!`
+//   }
+
+
+// let mondayWork = function(activity="go to the office") {
+//     return `This Monday, I will ${activity}.`
+//   }
+
+//   let wrapAdjective = function(style="*") {
+//     return function(adjective="special") {
+//       return `You are ${style}${adjective}${style}!`
+//     }
+//   }
 const Calculator = {
     add: function(a,b) {
       return a + b;
